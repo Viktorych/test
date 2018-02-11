@@ -4,7 +4,7 @@ var serveIndex = require('serve-index');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Графики разливки' });
 });
 
 const fs = require('fs');
