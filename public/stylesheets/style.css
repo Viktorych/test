@@ -12,7 +12,7 @@ div {
     width: 1420px;
     margin-left: auto;
     margin-right: auto;
-    background: #bbd6dd;
+    background: #d6ddd5;
     padding: 5px;
     height: 1100px;
     border: 2px solid #290ae3;
@@ -43,6 +43,7 @@ div {
     padding: 10px;
     margin-left: 10px;
     //background: #5e86e2;
+    background: #ffffff;
     width: 960px;
     height: 900px;
     text-align: left;
@@ -53,7 +54,7 @@ div {
     //float: left;
     padding: 10px;
     margin-left: 10px;
-//background: #5e86e2;
+background: #ffffff;
     width: 910px;
     height: 850px;
     //text-align: left;
