@@ -1,0 +1,77 @@
+body, html {
+    font: 14px tahoma;
+    margin: 0;
+    padding: 0px;
+}
+
+div {
+    text-align: center;
+}
+
+.wrap {
+    width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #bbd6dd;
+    padding: 5px;
+    height: 1100px;
+    border: 2px solid #290ae3;
+    //border-radius: 5px;
+}
+
+.header {
+    //background: #e25e5e;
+    height: 50px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.sidebar {
+    float: left;
+    padding: 10px;
+    width: 400px;
+    //background: #5ee28d;
+    height: 900px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.content {
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+    //background: #5e86e2;
+    width: 960px;
+    height: 900px;
+    text-align: left;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+#graph {
+    //float: left;
+    padding: 10px;
+    margin-left: 10px;
+//background: #5e86e2;
+    width: 910px;
+    height: 850px;
+    //text-align: left;
+    //border: 2px solid red;
+    //border-radius: 5px;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.bottom {
+   // background: #141926;
+    height: 60px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+
+}
