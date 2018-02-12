@@ -3,8 +3,12 @@
 /**
  * Module dependencies.
  */
-
+var plc=require('../plc')
 var app = require('../app');
+//var params = require('../app').params;
+//var plc = require('../app').plc;
+//console.log(params);
+//import {app} from '../app';
 var debug = require('debug')('nodetast:server');
 var http = require('http');
 

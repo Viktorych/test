@@ -1,18 +1,9 @@
-extends layout
-
-block content
-    div(class="wrap")
-        div(class="header") Заголовок
-        div(class="sidebar")
-            table(id="files")
-                thead
-                    tr
-                        th="file"
-                tr
-                    td="11122.csv"
-        div(class="content")
-            div(id="graph") График
-        div(class="clear")
-        div(class="bottom") Подвал
-    //h1= title
-    //p Welcome to #{title}
+html
+  head
+    title!= "HMI Сталеразливочной машины."
+    //<META HTTP-EQUIV="refresh" CONTENT="1">
+  body
+    h1 Время = #{dates}
+    h1 Вес ковша= #{wight} кг.
+    h1 Температура масла гидравлики= #{temper} С&deg;
+    img.image(src='/images/hc81.png' )
