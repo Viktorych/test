@@ -1,0 +1,126 @@
+body, html {
+
+    margin: 0;
+    padding: 0px;
+
+    background: #1eddcc;
+}
+
+div {
+    text-align: center;
+}
+
+.wrap {
+    width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #d6ddd5;
+    padding: 5px;
+    height: 1000px;
+    border: 2px solid #000000;
+
+}
+
+.header {
+
+    height: 30px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font: 20px tahoma;
+}
+
+.sidebar {
+    position: relative;
+    float: left;
+    padding: 10px;
+    width: 700px;
+    background: #ffffff;
+    height: 910px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.content {
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+
+    background: #5dff6f;
+    width: 660px;
+    height: 910px;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+#graph {
+
+    padding: 10px;
+    margin-left: 10px;
+    background: #ffffff;
+    width: 910px;
+    height: 850px;
+
+}
+
+.clear {
+    clear: both;
+}
+
+.bottom {
+
+    height: 60px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+
+}
+
+
+tr.row_selected td {
+    background-color: #41ff5d !important;
+}
+
+a {
+    width: 350px;
+
+}
+#picture {
+      margin-top: 50px;
+  }
+
+#wight{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+
+    width: 200px;
+    height: 100px;
+    background-color: #41ff5d;
+    border: 1px solid #ff291c;
+    border-radius: 5px;
+
+}
+#hydraulics{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+
+    width: 350px;
+    height: 150px;
+    background-color: #41ff5d;
+    border: 1px solid #ff291c;
+    border-radius: 5px;
+
+}
+
+#temper, #pwight{
+    background-color: #000000;
+    font-size: 25px;
+    color: #ff291c;
+
+}

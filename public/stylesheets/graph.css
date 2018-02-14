@@ -1,7 +1,8 @@
 body, html {
-    font: 14px tahoma;
+    //font: 14px tahoma;
     margin: 0;
     padding: 0px;
+    background-image: url("/images/hc81_mini.png");
 }
 
 div {
@@ -14,18 +15,19 @@ div {
     margin-right: auto;
     background: #d6ddd5;
     padding: 5px;
-    height: 1100px;
-    border: 2px solid #290ae3;
+    height: 1000px;
+    border: 2px solid #000000;
     //border-radius: 5px;
 }
 
 .header {
     //background: #e25e5e;
-    height: 50px;
+    height: 30px;
     margin-bottom: 5px;
     padding: 10px;
     border: 2px solid #000000;
     border-radius: 5px;
+    font: 20px tahoma;
 }
 
 .sidebar {
@@ -33,7 +35,7 @@ div {
     padding: 10px;
     width: 400px;
     //background: #5ee28d;
-    height: 900px;
+    height: 910px;
     border: 2px solid #000000;
     border-radius: 5px;
 }
@@ -45,7 +47,7 @@ div {
     //background: #5e86e2;
     background: #ffffff;
     width: 960px;
-    height: 900px;
+    height: 910px;
     text-align: left;
     border: 2px solid #000000;
     border-radius: 5px;
@@ -76,3 +78,5 @@ background: #ffffff;
     border-radius: 5px;
 
 }
+
+tr.row_selected td{background-color: #41ff5d !important;}

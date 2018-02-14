@@ -1,0 +1,13 @@
+{
+  "name": "config",
+  "version": "0.0.1",
+
+    "plc": {
+      "ip": "10.0.1.220",
+      "rack": 0,
+      "slot": 2
+    },
+  "dbPath": "./db/hc81.db",
+  "dataPath":"./data/"
+
+}

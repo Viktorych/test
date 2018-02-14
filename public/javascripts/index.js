@@ -1,58 +1,29 @@
+function executeQuery() {
+    $.ajax({
+        url: '/plc',
+        success: function(data) {
+            // do something with the return value here if you like
+            console.log(data.plc.temperature,data.plc.wight + " кг.");
+            $("#temper").html(data.plc.temperature.toFixed(2)+"&deg C");
+            $("#pwight").html(data.plc.wight);
+            $("#datatime").html(new Date());
+        },
+        error: function (error) {
+            $("#temper").html("ERR&deg C");
+            $("#wight").html("ERR кг.");
+            console.log(error);
 
-$(document).ready(function () {
-
-
-    var tableFiles = $('#files').DataTable({
-        "ajax": '/files',
-        "bJQueryUI": true,
-        "sPaginationType": "full_numbers",
-        "columns":
-            [
-                {"data": "file"}
-
-            ]
-    });
-    var g = new Dygraph(
-        document.getElementById("graph"),
-
-        [[0,0]],
-        {
-            //title: 'РР·РјРµРЅРµРЅРёРµ СЃРєРѕСЂРѕСЃС‚Рё  РІРѕ РІСЂРµРјРµРЅРё.',
-            labels: ['Время', 'Вес'],
-            ylabel: 'Вес',
-            xlabel: 'Время',
-            colors: ['#ff291c'],
-            strokeWidth: 2,
-            drawPoints: true,
-            pointSize: 1,
-            highlightCircleSize: 3,
         }
 
-        );
-
-    $('#files').on('click', 'tr', function () {
-        data = tableFiles.row(this).data();
-
-        _path = "/file/" + data.file;
-        //console.log('You clicked on ' + _path + '\'s row');
-        $.ajax({
-            type: "GET",
-            url: _path,
-            success: function (_data) {
-
-                //console.log(_data.data[0][0] );
-                g.updateOptions({'file': _data.data});
-                g.updateOptions({'title': data.file});
-            }
-        });
-
-        //datagraph = $.get("/file/" + data.file).responseText;
-        //console.log(datagraph);
-        //g.data = datagraph;
-        //g.updateOptions({'file': datagraph});
-        //analiz.ajax.url('/analiz/'+data.ID).load();
-        //g.ajax.
-
     });
+    setTimeout(executeQuery, 1000); // you could choose not to continue on failure...
+}
 
+
+$(document).ready(function () {
+    let dataPlc = null;
+    $("#button-1, #button-2, #button-3, #button-4, #button-5, #button-6, #button-7, #button-8, #button-9").button();
+
+    setTimeout(executeQuery, 1000);
 });
+

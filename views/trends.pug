@@ -1,0 +1,72 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/jquery.dataTables.min.css')
+        link(rel='stylesheet', href='/stylesheets/dygraph.css')
+        link(rel='stylesheet', href='/stylesheets/jquery-ui.css')
+        link(rel='stylesheet', href='/stylesheets/trends.css')
+        script(src="/javascripts/jquery-1.12.4.js")
+        script(src="/javascripts/jquery.dataTables.min.js")
+        script(src="/javascripts/dygraph.js")
+        script(src="/javascripts/jquery-ui.js")
+        script(src="/javascripts/trends.js")
+
+    body
+        div(class="wrap")
+            div(class="header") Тренды сталеразливочной тележки
+            div(class="sidebar")
+                table(border="1" cellspacing="0" cellpadding="0" align="center" width=400)
+                    tr
+                        td Время начала:
+                        td
+                            input(id="dpStart")
+                    tr
+                        td Время окончания:
+                        td
+                            input(id="dpStop")
+                    tr
+                        td Вес:
+                        td(id="wight")
+                    tr
+                        td Температура масла:
+                        td(id="temper")
+                fieldset
+                    legend Построение графика:
+                    label(for="checkbox-1") ВЕС
+                    input( type="checkbox" name="checkbox-1" id="checkbox-1")
+                    label( for="checkbox-2") Температура
+                    input( type="checkbox" name="checkbox-2" id="checkbox-2")
+
+                //p(id="datatime")
+                //img(src='/images/hc81.png' id="picture" width=680 )
+                //div(id="wight")
+                    //p ВЕС:
+                    //p(id="pwight")
+                //div(id="hydraulics")
+                    p
+                    table(border="1" cellspacing="0" cellpadding="0" align="center" width=300)
+                        tr
+                            td Температура масла:
+                            td(id="temper") NdN
+                        tr
+                            td Давление масла:
+                            td(id="pers") NdN
+                        tr
+                            td Уровень масла:
+                            td(id="level") NdN
+            div(class="content")
+                div(id="graph")
+
+
+
+
+
+
+
+        //h1 Время = #{dates}
+        //h1 Вес ковша= #{wight} кг.
+        //h1 Температура масла гидравлики= #{temper} С&deg;
+        //a(href="/graph") Архив
+        //img(src='/images/hc81.png' )
+        //div (id="grph")

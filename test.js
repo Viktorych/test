@@ -1,4 +1,4 @@
-module.exports = {
-    lm: "abc",
-    hello: "hello"
-};
+
+const config = require('./config');
+
+console.log(config.get());
